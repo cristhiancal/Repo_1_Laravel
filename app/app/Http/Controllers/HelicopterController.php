@@ -14,7 +14,9 @@ class HelicopterController extends Controller
      */
     public function index()
     {
-        $helicopters = Helicopter::latest()->paginate(5);
+
+
+        $helicopters =$this->getHelicopterApi();
   
         return view('helicopters.index',compact('helicopters'));
     }
