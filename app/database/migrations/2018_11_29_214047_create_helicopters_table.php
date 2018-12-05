@@ -15,6 +15,7 @@ class CreateHelicoptersTable extends Migration
     {
         Schema::create('helicopters', function (Blueprint $table) {
             $table->increments('id');
+            // $table->increments('detail');
             $table->string('type');
             $table->string('name');
             $table->string('speed');

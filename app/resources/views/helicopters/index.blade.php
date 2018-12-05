@@ -23,13 +23,14 @@
             <th>No</th>
             <th>Name</th>
             <th>Details</th>
-            <th width="280px">Action</th>
+            <th width="250px">Action</th>
         </tr>
         @foreach ($helicopters as $helicopter)
         <tr>
-            <td>{{ ++$i }}</td>
-            <td>{{ $helicopter->name }}</td>
-            <td>{{ $helicopter->detail }}</td>
+            
+            <td>{{ $helicopter['name'] }}</td>
+            <td>{{ $helicopter['detail'] }}</td>
+            <td>{{ $helicopter['action'] }}</td>
             <td>
                 <form action="{{ route('helicopters.destroy',$helicopter->id) }}" method="POST">
    

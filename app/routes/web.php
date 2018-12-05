@@ -19,6 +19,9 @@ Route::resource('products','ProductController');
 Route::resource('Airports','AirportsController');
 Route::resource('helicopters','HelicopterController');
 
+Route::get('helicopterList','HelicopterController@getHelicopterApi');
+
+
 
 
 
